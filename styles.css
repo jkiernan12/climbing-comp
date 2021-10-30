@@ -1,0 +1,51 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-menu__option {
+  list-style-type: none;
+  margin: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+article {
+  margin: 8px;
+  box-shadow: 0 0 10px black;
+}
+
+.route-header {
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 200px;
+}
+
+.route-header__icon {
+  padding: 20px;
+  border-radius: 40px;
+  background-color: white;
+}
+
+.route-header__views {
+  color: white;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.route-header p, route-header div {
+  margin: 20px;
+}
