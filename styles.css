@@ -20,8 +20,18 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+a {
+  text-decoration: none;
+  
+}
+
+header a {
+  color: #F18005;
+}
+
 body {
   font-family: 'Zen Kurenaido', sans-serif;
+  background-color: #fcfaf2;
 }
 nav {
   display: flex;
@@ -30,7 +40,8 @@ nav {
 }
 
 header {
-  background-color: slategray;
+  background-color: #071A28;
+  color: #F18005;
 }
 
 .main-menu {
@@ -47,7 +58,7 @@ header {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin: 20px;
 }
 
@@ -63,6 +74,9 @@ article {
   justify-content: space-between;
   align-items: flex-start;
   min-height: 200px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/stairway-to-heaven.jpeg");
+  background-color: rgba(0, 0, 0, 1);
+  background-position: 0 50%;
 }
 
 .route-header__icon {
@@ -104,8 +118,11 @@ p, .main-menu__option {
 .route-body__url {
   word-break: break-all;
   margin: 18px 0;
-  background-color: gray;
+  background-color: #cfcfcf;
   padding: 5px;
+}
+.route-body__url a {
+  color: #4d4d4d;
 }
 
 .route-body__grade-label {
@@ -139,4 +156,27 @@ p, .main-menu__option {
   list-style-type: none;
   background-color: white;
   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column-reverse;
+  }
+
+  nav img {
+    display: none;
+  }
+  
+  .account-info {
+    text-align: right;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
