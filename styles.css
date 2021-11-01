@@ -67,6 +67,11 @@ article {
   box-shadow: 0 0 10px black;
 }
 
+h1 {
+  font-size: 48px;
+  margin: 10px 25px;
+}
+
 .route-header {
   background-color: gray;
   display: flex;
@@ -148,6 +153,10 @@ p, .main-menu__option {
 
 .account-options:hover {
   display: block;
+}
+
+.account-options li:hover {
+  text-decoration: underline;
 }
 
 .account-options {
