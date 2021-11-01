@@ -29,10 +29,15 @@ nav {
   justify-content: space-between;
 }
 
+header {
+  background-color: slategray;
+}
+
 .main-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .main-menu__option {
@@ -63,6 +68,8 @@ article {
 .route-header__icon {
   padding: 20px;
   border-radius: 40px;
+  font-size: 40px;
+  line-height: 40px;
   background-color: white;
 }
 
@@ -72,15 +79,25 @@ article {
   margin: 0 20px;
 }
 
-.route-header p, route-header div {
+.route-header__icon, .route-header div {
   margin: 20px;
+}
+
+.big-text {
+  font-size: 48px;
+  margin-top: 0;
+  line-height: 38px;
+}
+
+.small-text {
+  margin-bottom: 0;
 }
 
 .route-body {
   margin: 20px;
 }
 
-p {
+p, .main-menu__option {
   font-size: 24px;
 }
 
@@ -95,6 +112,31 @@ p {
   margin-top: 18px;
 }
 
-.route-body__url, .route-body__area-label, .route-body__grade-label, .route-body__date {
+.route-body__grade {
+  font-size: 48px;
+  line-height: 40px;
+}
+
+.route-body__date {
+  color: slategray;
+}
+
+.route-body__url, .route-body__area-label, .route-body__grade-label, .route-body__date, .small-text {
   font-size: 18px;
+}
+
+.account-info:hover~.account-options {
+  display: block;
+}
+
+.account-options:hover {
+  display: block;
+}
+
+.account-options {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  background-color: white;
+  width: 100%;
 }
